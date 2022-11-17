@@ -1,0 +1,185 @@
+#
+# ~/.config/starship.toml
+#
+# Starship Config File by ottelli
+#
+
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
+format = """
+$username \
+$directory\
+$git_branch\
+$git_state\
+$git_status\
+$package\
+$character"""
+
+# Add line between prompts
+add_newline = true
+
+[username]
+style_user = "#1974d2 bold"
+style_root = "#7e26e7 bold"
+disabled = true
+show_always = true
+format = "[$user]($style)"
+
+[directory]
+truncation_length = 4
+truncation_symbol = "../"
+style = "bold fg:#1974d2" # blue
+read_only_style = "bold fg:#ff9247" # orange
+read_only = " ro" 
+
+[character]
+success_symbol = "[>](bold fg:#7e26e7)"
+error_symbol = "[x](bold red)"
+vimcmd_symbol = "[<](bold green)"
+
+[git_commit]
+tag_symbol = " tag "
+
+[git_status]
+ahead = ">"
+behind = "<"
+diverged = "<>"
+renamed = "r"
+deleted = "x"
+
+[cmd_duration]
+disabled = true
+
+
+[aws]
+symbol = "aws "
+
+[bun]
+symbol = "bun "
+
+[c]
+symbol = "C "
+
+[cobol]
+symbol = "cobol "
+
+[conda]
+symbol = "conda "
+
+[crystal]
+symbol = "cr "
+
+[cmake]
+symbol = "cmake "
+
+[daml]
+symbol = "daml "
+
+[dart]
+symbol = "dart "
+
+[deno]
+symbol = "deno "
+
+[dotnet]
+symbol = ".NET "
+
+#[directory]
+#read_only = " ro"
+
+[docker_context]
+symbol = "docker "
+
+[elixir]
+symbol = "exs "
+
+[elm]
+symbol = "elm "
+
+[git_branch]
+symbol = "git "
+style = "bold yellow"
+format = "on [$symbol$branch(:$remote_branch)]($style) "
+
+[golang]
+symbol = "go "
+
+[hg_branch]
+symbol = "hg "
+
+[java]
+symbol = "java "
+
+[julia]
+symbol = "jl "
+
+[kotlin]
+symbol = "kt "
+
+[lua]
+symbol = "lua "
+
+[nodejs]
+symbol = "nodejs "
+
+[memory_usage]
+symbol = "memory "
+
+[meson]
+symbol = "meson "
+
+[nim]
+symbol = "nim "
+
+[nix_shell]
+symbol = "nix "
+
+[ocaml]
+symbol = "ml "
+
+[package]
+symbol = "pkg "
+format = "via [$version](yellow bold)"
+
+[perl]
+symbol = "pl "
+
+[php]
+symbol = "php "
+
+[pulumi]
+symbol = "pulumi "
+
+[purescript]
+symbol = "purs "
+
+[python]
+symbol = "py "
+
+[raku]
+symbol = "raku "
+
+[ruby]
+symbol = "rb "
+
+[rust]
+symbol = "rs "
+
+[scala]
+symbol = "scala "
+
+[spack]
+symbol = "spack "
+
+[sudo]
+symbol = "sudo "
+
+[swift]
+symbol = "swift "
+
+[terraform]
+symbol = "terraform "
+
+[zig]
+symbol = "zig "
