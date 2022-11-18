@@ -27,7 +27,6 @@ set -o vi
 #
 ## Environment Variables
 #
-export PATH=$PATH:$HOME/.local/bin
 
 
 #

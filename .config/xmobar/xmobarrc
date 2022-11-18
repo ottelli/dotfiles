@@ -1,0 +1,53 @@
+Config { overrideRedirect = False
+       , font            = "xft:Source Code Pro Semibold-9"
+       , additionalFonts = [ "xft:mononoki Nerd Font:style=Bold"
+                           , "xft:FontAwesome-8"
+                           ]
+      --  , bgColor         = "#272B2E"
+       , fgColor         = "#fefef2"
+       , position        = TopW L 100
+       , commands = 
+                    [ Run StdinReader
+                    
+                    , Run Cpu       [ "--template", "<fn=1>\xf2db</fn> <total>"
+                                 -- Levels
+                                    , "-L", "40"
+                                    , "-H", "70"
+
+                                 -- Colours
+                                    , "--high"  , "#d53031"
+                                    , "--normal", "#f4975f"
+                                    ] 10
+                    
+                    , Run Memory    [ "--template" , "<fn=1>\xf538</fn> <usedratio>" 
+                                    ] 10
+                    
+                    , Run Battery
+                                    [ "--template" , "<acstatus>"
+                                 -- Levels
+                                    , "--Low"      , "19"
+                                    , "--High"     , "60"
+
+                                 -- Colours
+                                    , "--low"      , "#fd6c6c"
+                                    , "--normal"   , "#fefef2"
+                                    , "--high"     , "#7e26e7"
+
+                                 -- States
+                                    , "--" 
+                                     -- Discharging 
+                                        , "-o"  , "<fc=#fefef2><fn=2>\xf242</fn> <left></fc>"
+                                        
+                                     -- Plugged in
+                                        , "-O"  , "<fc=#1974d2><fn=2>\xf1e6</fn> <left></fc>"
+                                        
+                                     -- Charged
+                                        , "-i"  , "<fc=#7e26e7><fn=2>\xf240</fn> <left></fc>"
+                                    ] 50
+                    
+                    , Run Date "<fc=#7e26e7>%-l:%M</fc> %a %_d %B" "date" 10
+                    ]
+       , sepChar  = "%"
+       , alignSep = "}{"
+       , template = " %StdinReader% }{ %battery% %cpu% %memory% <fc=#1974d2>//</fc> %date% "
+       }

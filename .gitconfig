@@ -1,5 +1,21 @@
+#
+# .gitconfig
+#
+
 [user]
 	email = business.ottelli@gmail.com
 	name = ottelli
+
 [init]
-	defaultBranch = main
+    defaultBranch = master
+
+[core]
+    editor = vim
+
+[alias]
+    last = log -1 HEAD
+    st = status -sbu
+    co = checkout
+    br = branch
+    ci = commit
+    aa = add -A
