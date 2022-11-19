@@ -49,7 +49,7 @@ alias ls='ls --color=auto'
 alias la='ls -A'
 alias ll='ls -lA'
 
-alias myip='echo "My IP: " && curl ipinfo.io/ip'
+alias myip='echo "Current IP is: $(curl -s ipinfo.io/ip)"'
 
 # Can also define local aliases, eg for specific workflows
 if [ -f $HOME/.bash_aliases ] ; then
@@ -110,7 +110,7 @@ function xla () { clear && echo "" && la; }
 ## Include user scripts
 if [ ! -z `ls $HOME/.local/include` ] ; then
 	for i in $HOME/.local/include/*;
-		do source $i
+		do . $i
 	done
 fi
 
