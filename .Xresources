@@ -12,12 +12,19 @@
 
 XTerm*termName: xterm-256color
 !XTerm*renderFont: true
-XTerm*faceName: Source Code Pro Semibold
+XTerm*faceName: SauceCodePro Nerd Font:style=Bold
 !XTerm*faceName: mononoki Nerd Font Mono:style=Bold
-XTerm*faceSize: 9
+XTerm*faceSize: 11
+XTerm*selectToClipboard: true
+!*.background: #000000
 
-!*background: #1f1f2c 
-*.background: #000000
+! bunker, deep grey, original vim ayu theme bg
+*.background: #0F1419
+
+! match vim bg
+!*.background: #242f3c
+
+
 *.foreground: #fefef2
 *.cursorColor: #ffffff
 
