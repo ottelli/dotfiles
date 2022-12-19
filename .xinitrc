@@ -40,15 +40,15 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
 fi
 
 # Wallpaper 
-nitrogen --set-auto ~/Pictures/Wallpapers/lorenz-84_comma.bmp
+#nitrogen --set-auto ~/Pictures/Wallpapers/lorenz-84_comma.bmp
 
 # Set the default cursor to a pointer
-xsetroot -cursor_name left_ptr
+#xsetroot -cursor_name left_ptr
 
 # Power Management
-xfce4-power-manager &
+#xfce4-power-manager &
 
 # Window Manager, and Status Bar
-exec xmonad
+#exec xmonad
 
 #

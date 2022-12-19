@@ -83,7 +83,7 @@ fi
 if [ -d "$HOME/.pyenv" ] ; then
 	export PYENV_ROOT=$HOME/.pyenv
 	export PATH="$PATH:$PYENV_ROOT/bin"
-	#eval "$(pyenv init --path)" 	# sets up shims path
+	eval "$(pyenv init --path)" 	# sets up shims path
 	eval "$(pyenv init -)"		# install pyenv into shell, enable shims and autocompletion
 	eval "$(pyenv virtualenv-init -)"	# auto activate if dir contains .python-version
 fi
