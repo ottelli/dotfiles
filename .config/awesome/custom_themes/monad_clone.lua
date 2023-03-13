@@ -26,7 +26,7 @@ local theme = {
   fg_volatile  = colours['red600'],
   bg_systray   = colours['bg'],
   font		     = "SauceCodePro Nerd Font Bold 9",
-  taglist_font = "SauceCodePro Nerd Font Mono Bold 10",
+  taglist_font = "SauceCodePro Nerd Font Bold 10",
   useless_gap  = dpi(0),
   border_width = dpi(2), 
   -----------------------------------------------
@@ -34,7 +34,7 @@ local theme = {
   border_focus        = colours['primary'],
   border_normal       = colours['grey'],
   taglist_bg_occupied = colours['black'],
-  taglist_fg_occupied = colours['secondary'],
+  taglist_fg_occupied = colours['contrast'],
   taglist_fg_empty    = colours['fg'],
 }
 
@@ -59,8 +59,8 @@ local taglist = function(s, taglist_btns)
             },
             layout = wibox.layout.fixed.horizontal,
           },
-          left   = 10,
-          right  = 10,
+          left   = 6,
+          right  = 6,
           widget = wibox.container.margin
         },
         id     = "background_role",
