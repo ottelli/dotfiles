@@ -45,7 +45,7 @@ $character"""
 add_newline = true
 
 # timeout for commands run by starship
-command_timeout = 600 # default 500
+command_timeout = 1000 # default 500
 
 
 

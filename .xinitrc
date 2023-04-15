@@ -1,7 +1,7 @@
 #!/bin/sh
 
 #
-# ~/.xinitrc 
+# ~/.xinitrc
 #
 
 ## Merge in defaults and user settings
@@ -33,22 +33,24 @@ fi
 ## Start the desktop environment
 # Essentials first
 if [ -d /etc/X11/xinit/xinitrc.d ] ; then
- for f in /etc/X11/xinit/xinitrc.d/?*.sh ; do
-  [ -x "$f" ] && . "$f"
- done
- unset f
+    for f in /etc/X11/xinit/xinitrc.d/?*.sh ; do
+        [ -x "$f" ] && . "$f"
+    done
+    unset f
 fi
 
-# Wallpaper 
-nitrogen --set-auto ~/Pictures/Wallpapers/lorenz-84_comma.bmp
+## X11 + XMonad setup only
+
+# Wallpaper
+#nitrogen --set-auto ~/Pictures/Wallpapers/lorenz-84_comma.bmp
 
 # Set the default cursor to a pointer
-xsetroot -cursor_name left_ptr
+#xsetroot -cursor_name left_ptr
 
 # Power Management
-xfce4-power-manager &
+#xfce4-power-manager &
 
 # Window Manager, and Status Bar
-exec xmonad
+#exec xmonad
 
 #

@@ -15,8 +15,11 @@ let g:colors_name = "ayu"
 let s:palette = {}
 
 " Original bg color = '#0F1419'
+" Not-quite-black = #0a0b0c"
+" oxford blue - bit lighter and blue than current #2e3a49 
 
-let s:palette.bg        = {'dark': "#0a0b0c",  'light': "#FAFAFA",  'mirage': "#212733"}
+
+let s:palette.bg        = {'dark': "#242f3c",  'light': "#FAFAFA",  'mirage': "#212733"}
 
 let s:palette.comment   = {'dark': "#5C6773",  'light': "#ABB0B6",  'mirage': "#5C6773"}
 let s:palette.markup    = {'dark': "#F07178",  'light': "#F07178",  'mirage': "#F07178"}

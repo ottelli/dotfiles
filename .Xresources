@@ -1,29 +1,30 @@
 ! 
-! ottelli
+!! ~/.Xresources
+!
+!! ottelli
 !
 
-!Xft.dpi: 96
-!Xft.antialias: true
-!Xft.hinting: true
-!Xft.rgba: rgb
-!Xft.autohint: true
-!Xft.hintstyle: hintfull
-
+!
+!! XTerm Specific
+!
 
 XTerm*termName: xterm-256color
-!XTerm*renderFont: true
 XTerm*faceName: SauceCodePro Nerd Font:style=Bold
-!XTerm*faceName: mononoki Nerd Font Mono:style=Bold
 XTerm*faceSize: 11
 XTerm*selectToClipboard: true
+
+!
+!! Colours
+!
+
+! True Black
 !*.background: #000000
 
-! bunker, deep grey, original vim ayu theme bg
+! Deep Grey (Bunker)
 *.background: #0F1419
 
-! match vim bg
+! Match current vim background
 !*.background: #242f3c
-
 
 *.foreground: #fefef2
 *.cursorColor: #ffffff
