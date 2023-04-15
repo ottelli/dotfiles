@@ -93,6 +93,10 @@ if [ -d "/usr/local/go/bin" ] ; then
 	export PATH="$PATH:/usr/local/go/bin"
 fi
 
+if [ -d "/home/elliott/go/bin" ] ; then
+    export PATH="$PATH:/home/elliott/go/bin"
+fi
+
 
 #
 ## Functions
