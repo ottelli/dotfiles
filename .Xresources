@@ -4,15 +4,6 @@
 !! ottelli
 !
 
-
-!Xft.dpi: 96
-!Xft.antialias: true
-!Xft.hinting: true
-!Xft.rgba: rgb
-!Xft.autohint: true
-!Xft.hintstyle: hintfull
-
-
 !
 !! XTerm Specific
 !
@@ -29,7 +20,7 @@ XTerm*selectToClipboard: true
 ! True Black
 !*.background: #000000
 
-! Deep Grey (Bunker), original vim ayu theme bg
+! Deep Grey (Bunker)
 *.background: #0F1419
 
 ! Match current vim background
